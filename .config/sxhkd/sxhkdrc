@@ -22,7 +22,7 @@ super + a
 	$TERMINAL
 # rofi drun #
 super + @space
-	~/scripts/dmenu-desktop-menu.sh
+	~/.config/rofi/scripts/launcher_t1
 #   dmenu   #
 super + r
 	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono' 
@@ -39,7 +39,8 @@ super + Escape
 	pkill -USR1 -x sxhkd
 ## lock screen  ##
 super + l
-	betterlockscreen -l blur 0.8
+  ~/.config/rofi/powermenu/type-2/powermenu.sh
+#	betterlockscreen -l blur 0.8
 
 # volume control #
 XF86AudioLowerVolume
@@ -48,6 +49,10 @@ XF86AudioRaiseVolume
 	amixer set Master 5%+
 XF86AudioMute
 	amixer set Master {mute , unmute}
+
+# applets  keys #
+Print
+  ~/.config/rofi/applets/bin/screenshot.sh
 
 ####  screen  ####
 XF86ScreenSaver	
