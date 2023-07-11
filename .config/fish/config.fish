@@ -8,7 +8,7 @@
 #
 
 function fish_greeting
-    echo -e "$(cat ~/.config/fish/greeting.txt)"
+  echo -e "$(cat ~/.config/fish/greeting.txt)"
 end
 
 if status is-interactive

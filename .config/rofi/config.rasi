@@ -179,3 +179,4 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 */
 }
+@theme "/home/untemi/.local/share/rofi/themes/simple-tokyonight.rasi"
