@@ -43,7 +43,7 @@ bspc rule -a firefox desktop='^1'
 setxkbmap fr &
 /home/untemi/scripts/performance.sh &
 nitrogen --restore &
-picom &
+picom --config ~/.config/picom/picom.conf &
 /usr/bin/polkit-dumb-agent &
 ~/.config/polybar/launch.sh &
 flameshot &

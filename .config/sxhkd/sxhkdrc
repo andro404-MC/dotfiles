@@ -31,8 +31,12 @@ super + e
 	$EXPLORER	
 #  browser  #
 super + b
-	$BROWSER	
-
+	$BROWSER
+#geforce Now#
+super + shift + g
+  /opt/geforcenow-electron/geforcenow-electron --spoof-windows
+super + shift + m
+  java -jar ~/Downloads/Salwyrr.jar
 ######### functionality #########
 ## sxhkd reload ##
 super + Escape
