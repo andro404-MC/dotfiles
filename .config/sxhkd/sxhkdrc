@@ -60,7 +60,7 @@ Print
 
 #keyboard layout#
 super + shift + l
-  setxkbmap {ara , fr}
+  ~/scripts/layoutswitch.sh
 
 #############################
 ####### bspwm hotkeys #######
