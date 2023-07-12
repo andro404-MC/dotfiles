@@ -58,9 +58,9 @@ XF86AudioMute
 Print
   ~/.config/rofi/applets/bin/screenshot.sh
 
-####  screen  ####
-XF86ScreenSaver	
-	brightnessctl {-s s 0,-r }
+#keyboard layout#
+super + shift + l
+  setxkbmap {ara , fr}
 
 #############################
 ####### bspwm hotkeys #######
