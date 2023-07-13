@@ -33,11 +33,13 @@ alias clear="clear && fish_greeting"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
 
 # DEFAULT APPS
-set -x BROWSER firefox
-set -x EDITOR nvim
-set -x EXPLORER thunar
-set -x TERMINAL alacritty
-set -x TERMINALEMULATOR alacritty
-set -x READER zathura
-set -x VIDEO mpv
-set -x IMAGE sxiv
+set -Ux BROWSER firefox
+set -Ux EDITOR nvim
+set -Ux EXPLORER pcmanfm
+set -Ux TERMINAL alacritty
+set -Ux TERMINALEMULATOR alacritty
+set -Ux READER zathura
+set -Ux VIDEO mpv
+set -Ux IMAGE sxiv
+
+set -Ux LIBVA_DRIVER_NAME i965

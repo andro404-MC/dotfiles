@@ -1,5 +1,15 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export BROWSER:firefox
+SETUVAR --export EDITOR:nvim
+SETUVAR --export EXPLORER:pcmanfm
+SETUVAR --export IMAGE:sxiv
+SETUVAR --export LIBVA_DRI3_DISABLE:1
+SETUVAR --export LIBVA_DRIVER_NAME:i965
+SETUVAR --export READER:zathura
+SETUVAR --export TERMINAL:alacritty
+SETUVAR --export TERMINALEMULATOR:alacritty
+SETUVAR --export VIDEO:mpv
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
