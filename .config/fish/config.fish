@@ -43,3 +43,4 @@ set -Ux VIDEO mpv
 set -Ux IMAGE sxiv
 
 set -Ux LIBVA_DRIVER_NAME i965
+set -Ux LIBVA_DRI3_DISABLE 1
