@@ -1,1 +1,1 @@
-sudo x86_energy_perf_policy --turbo-enable 1 "performance"
+x86_energy_perf_policy --turbo-enable 1 "performance"
