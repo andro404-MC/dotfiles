@@ -25,6 +25,7 @@ my bspwm TokyoNight theme (on arch btw)
 - [clipit](https://aur.archlinux.org/packages/clipit)
 - [xfce4-power-manager](https://archlinux.org/packages/extra/x86_64/xfce4-power-manager/)
 - [polkit-dumb-agent-git](https://aur.archlinux.org/packages/polkit-dumb-agent-git)
+- [cava](https://aur.archlinux.org/packages/cava)
 
 You can install them using YAY:
 ```bash

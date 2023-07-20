@@ -3,6 +3,7 @@
 SETUVAR --export BROWSER:firefox
 SETUVAR --export EDITOR:nvim
 SETUVAR --export EXPLORER:pcmanfm
+SETUVAR --export FILES:pcmanfm
 SETUVAR --export IMAGE:sxiv
 SETUVAR --export LIBVA_DRI3_DISABLE:1
 SETUVAR --export LIBVA_DRIVER_NAME:i965
