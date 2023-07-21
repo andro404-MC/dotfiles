@@ -27,6 +27,7 @@ my bspwm TokyoNight theme (on arch btw)
 - [polkit-dumb-agent-git](https://aur.archlinux.org/packages/polkit-dumb-agent-git)
 - [cava](https://aur.archlinux.org/packages/cava)
 - [expac](https://archlinux.org/packages/extra/x86_64/expac/)
+- [fastfetch](https://aur.archlinux.org/packages/fastfetch)
 
 You can install them using YAY:
 ```bash
