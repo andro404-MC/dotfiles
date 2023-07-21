@@ -30,7 +30,9 @@ alias pm="sudo pacman"
 alias pmu="sudo pacman -Syu"
 alias c="clear"
 alias clear="clear && fish_greeting"
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias recpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+alias allpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
 
 # DEFAULT APPS
 set -Ux BROWSER firefox
