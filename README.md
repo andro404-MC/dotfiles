@@ -41,6 +41,7 @@ Not yet (but just remember to change the keyboard layout in the bspwmrc file and
 Here are some related projects
 
 - [My inspiration](https://github.com/stronk-dev/Tokyo-Night-Linux)
+- i stole some alias from this [guy](https://github.com/ART3MISTICAL/dotfiles)
 - [Gtk theme (by rtlewis1 modified by stronk-dev)](https://github.com/rtlewis1/GTK/tree/Material-Black-Colors-Desktop)
 - [Icons theme (by vinceliuice modified by me)](https://github.com/vinceliuice/Tela-circle-icon-theme)
 - [Rofi wifi menu (by ericmurphyxyz)](https://github.com/ericmurphyxyz/rofi-wifi-menu)
