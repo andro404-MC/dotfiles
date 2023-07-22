@@ -47,5 +47,5 @@ picom --config ~/.config/picom/picom.conf &
 /usr/bin/polkit-dumb-agent &
 ~/.config/polybar/launch.sh &
 xfce4-power-manager &
-clipit &
+#clipit &
 dunst &
