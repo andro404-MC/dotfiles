@@ -36,6 +36,9 @@ alias allpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
 alias sizepkg="expac -H M '%m\t%n' | sort -h | nl"
 alias neofetch="fastfetch"
 alias clean="yay -Sc && sudo pacman -Rns (pacman -Qtdq)"
+alias boost="killall polybar picom"
+alias restore="./.config/polybar/launch.sh && picom --config ~/.config/picom/picom.conf -b"
+alias myip="curl ip.me"
 
 # DEFAULT APPS
 set -Ux BROWSER firefox
