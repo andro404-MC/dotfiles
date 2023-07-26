@@ -37,7 +37,7 @@ alias sizepkg="expac -H M '%m\t%n' | sort -h | nl"
 alias neofetch="fastfetch"
 alias clean="yay -Sc && sudo pacman -Rns (pacman -Qtdq)"
 alias boost="killall polybar picom"
-alias restore="./.config/polybar/launch.sh && picom --config ~/.config/picom/picom.conf -b"
+alias restore="bash ~/.config/polybar/launch.sh && picom --config ~/.config/picom/picom.conf -b &"
 alias myip="curl ip.me"
 
 # DEFAULT APPS
@@ -45,7 +45,6 @@ set -Ux BROWSER firefox
 set -Ux EDITOR nvim
 set -Ux EXPLORER pcmanfm
 set -Ux TERMINAL alacritty
-set -Ux TERMINALEMULATOR alacritty
 set -Ux READER zathura
 set -Ux VIDEO mpv
 set -Ux IMAGE sxiv
