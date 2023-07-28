@@ -41,6 +41,7 @@ bspc rule -a firefox desktop='^1'
 
 #### Auto start #######
 setxkbmap fr &
+dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY &
 /home/untemi/scripts/performance.sh &
 nitrogen --restore &
 picom --config ~/.config/picom/picom.conf &
