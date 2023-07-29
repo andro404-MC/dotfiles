@@ -10,22 +10,24 @@
 function fish_greeting
   echo -e "$(cat ~/.config/fish/greeting.txt)"
 end
-
+function keyb
+  xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
+end
+function clean
+  yay -Sc
+  pm -Rns $(pacman -Qtdq)
+end
 if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
 end
 
 # ALIAS
-#alias ls="exa --icons --group-directories-first"
 alias ls="lsd -a --group-directories-first"
-#alias ll="exa -al --color=always --group-directories-first --icons"
 alias ll="lsd -al --color=always --group-directories-first"
 alias tree="exa --color=always --icons --tree"
 alias grep="rg"
-#alias find="fd"
 alias intel_gpu_top="sudo intel_gpu_top"
-#alias nvi="neovide --multigrid"
 alias pm="sudo pacman"
 alias pmu="sudo pacman -Syu"
 alias c="clear"
@@ -35,7 +37,6 @@ alias recpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias allpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
 alias sizepkg="expac -H M '%m\t%n' | sort -h | nl"
 alias neofetch="fastfetch"
-alias clean="yay -Sc"
 alias boost="killall polybar picom"
 alias restore="bash ~/.config/polybar/launch.sh && picom --config ~/.config/picom/picom.conf -b &"
 alias myip="curl ip.me"
@@ -49,5 +50,5 @@ set -Ux READER zathura
 set -Ux VIDEO mpv
 set -Ux IMAGE sxiv
 
-set -Ux LIBVA_DRIVER_NAME i965
 set -Ux LIBVA_DRI3_DISABLE 1
+set -Ux QT_STYLE_OVERRIDE Adwaita-Dark

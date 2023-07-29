@@ -7,6 +7,7 @@ SETUVAR --export FILES:pcmanfm
 SETUVAR --export IMAGE:sxiv
 SETUVAR --export LIBVA_DRI3_DISABLE:1
 SETUVAR --export LIBVA_DRIVER_NAME:i965
+SETUVAR --export QT_STYLE_OVERRIDE:Adwaita\x2dDark
 SETUVAR --export READER:zathura
 SETUVAR --export TERMINAL:alacritty
 SETUVAR --export TERMINALEMULATOR:alacritty

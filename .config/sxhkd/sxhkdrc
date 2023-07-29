@@ -1,4 +1,5 @@
-#!/bin/sh
+##!/bin/sh
+
 #  #########   #####   #####
 # #########    ####     ####
 # ####   #      ####   ####   hotkey
@@ -25,18 +26,18 @@ super + @space
 	~/.config/rofi/scripts/launcher_t1
 #   dmenu   #
 super + r
-	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono'
-super + z
-  rofi -show calc
+	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono' 
 #  pcmanfm  #
 super + e
 	$EXPLORER	
 #  browser  #
 super + b
-  $BROWSER	
+	$BROWSER
 #geforce Now#
 super + shift + g
   /opt/geforcenow-electron/geforcenow-electron --spoof-windows
+super + shift + m
+  java -jar ~/Downloads/Salwyrr.jar
 ######### functionality #########
 ## sxhkd reload ##
 super + Escape

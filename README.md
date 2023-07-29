@@ -12,6 +12,8 @@ my bspwm TokyoNight theme (on arch btw)
 - [alacritty](https://archlinux.org/packages/extra/x86_64/alacritty/)
 - [pcmanfm](https://archlinux.org/packages/extra/x86_64/pcmanfm/)
 - [fish](https://archlinux.org/packages/extra/x86_64/fish/)
+- [lsd](https://archlinux.org/packages/extra/x86_64/lsd/)
+- [exa](https://archlinux.org/packages/extra/x86_64/exa/)
 - [starship](https://archlinux.org/packages/extra/x86_64/starship/)
 - [gtk-engine-murrine](https://archlinux.org/packages/extra/x86_64/gtk-engine-murrine/)
 - [rofi](https://archlinux.org/packages/extra/x86_64/rofi/)
@@ -30,7 +32,7 @@ my bspwm TokyoNight theme (on arch btw)
 
 You can install them using YAY:
 ```bash
-  yay -S bspwm sxhkd picom polybar-git nitrogen lightdm lightdm-gtk-greeter alacritty pcmanfm fish starship gtk-engine-murrine rofi rofi-calc betterlockscreen brightnessctl lxappearance-gtk3 xclip maim xfce4-power-manager polkit-dumb-agent-git cava expac
+  yay -S bspwm sxhkd picom polybar-git nitrogen lightdm lightdm-gtk-greeter alacritty pcmanfm fish starship gtk-engine-murrine rofi rofi-calc betterlockscreen brightnessctl lxappearance-gtk3 xclip maim xfce4-power-manager polkit-dumb-agent-git cava expac exa lsd
 ```
 
 ## Installation
