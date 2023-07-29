@@ -1,5 +1,3 @@
-##!/bin/sh
-
 #  #########   #####   #####
 # #########    ####     ####
 # ####   #      ####   ####   hotkey
@@ -20,24 +18,24 @@
 ###### apps start shortcut ######
 # alacritty #
 super + a
-	$TERMINAL
+  $TERMINAL	
 # rofi drun #
 super + @space
 	~/.config/rofi/scripts/launcher_t1
 #   dmenu   #
 super + r
-	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono' 
+	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono'
+super + z
+  rofi -show calc
 #  pcmanfm  #
 super + e
-	$EXPLORER	
+	$EXPLORER
 #  browser  #
 super + b
-	$BROWSER
+  $BROWSER
 #geforce Now#
 super + shift + g
   /opt/geforcenow-electron/geforcenow-electron --spoof-windows
-super + shift + m
-  java -jar ~/Downloads/Salwyrr.jar
 ######### functionality #########
 ## sxhkd reload ##
 super + Escape
@@ -46,6 +44,8 @@ super + Escape
 super + l
   ~/.config/rofi/powermenu/type-2/powermenu.sh
 #	betterlockscreen -l blur 0.8
+XF86AudioPlay
+  playerctl play-pause
 
 # volume control #
 XF86AudioLowerVolume
