@@ -17,6 +17,13 @@ function clean
   yay -Sc
   pm -Rns $(pacman -Qtdq)
 end
+function boost
+  killall polybar picom
+end
+function restore
+  sh ~/.config/polybar/launch.sh
+  picom --config ~/.config/picom/picom.conf -b
+end
 if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
@@ -37,8 +44,6 @@ alias recpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias allpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
 alias sizepkg="expac -H M '%m\t%n' | sort -h | nl"
 alias neofetch="fastfetch"
-alias boost="killall polybar picom"
-alias restore="bash ~/.config/polybar/launch.sh && picom --config ~/.config/picom/picom.conf -b &"
 alias myip="curl ip.me"
 
 # DEFAULT APPS
