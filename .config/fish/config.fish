@@ -40,9 +40,9 @@ alias pmu="sudo pacman -Syu"
 alias c="clear"
 alias clear="clear && fish_greeting"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias recpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias allpkg="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
-alias sizepkg="expac -H M '%m\t%n' | sort -h | nl"
+alias pkgrec="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+alias pkgli="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
+alias pkgsize="expac -H M '%m\t%n' | sort -h | nl"
 alias neofetch="fastfetch"
 alias myip="curl ip.me"
 
@@ -56,4 +56,3 @@ set -Ux VIDEO mpv
 set -Ux IMAGE sxiv
 
 set -Ux LIBVA_DRI3_DISABLE 1
-set -Ux QT_STYLE_OVERRIDE Adwaita-Dark
