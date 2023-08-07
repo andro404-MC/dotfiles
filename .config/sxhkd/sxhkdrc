@@ -33,9 +33,8 @@ super + e
 #  browser  #
 super + b
   $BROWSER
-#geforce Now#
-super + shift + g
-  /opt/geforcenow-electron/geforcenow-electron --spoof-windows
+super + d
+  discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
 ######### functionality #########
 ## sxhkd reload ##
 super + Escape
@@ -47,6 +46,8 @@ super + l
 XF86AudioPlay
   playerctl play-pause
 
+shift + XF86AudioPlay
+  playerctl pause -a
 # volume control #
 XF86AudioLowerVolume
 	amixer set Master 5%-
