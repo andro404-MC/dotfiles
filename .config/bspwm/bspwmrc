@@ -28,10 +28,9 @@ bspc config focus_follows_pointer true
 ##  floating rules   ##
 bspc rule -a Xarchiver state=floating
 bspc rule -a Lxappearance state=floating
-bspc rule -a Sxiv state=floating
+bspc rule -a qimgv state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Pcmanfm state=floating
-bspc rule -a Thunar state=floating
 bspc rule -a firefox desktop='^1'
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
@@ -42,7 +41,6 @@ bspc rule -a firefox desktop='^1'
 #### Auto start #######
 setxkbmap fr &
 dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY &
-nitrogen --restore &
 picom --config ~/.config/picom/picom.conf &
 /usr/bin/polkit-dumb-agent &
 ~/.config/polybar/launch.sh &
