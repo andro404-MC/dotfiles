@@ -56,3 +56,4 @@ set -Ux VIDEO mpv
 set -Ux IMAGE sxiv
 
 set -Ux LIBVA_DRI3_DISABLE 1
+set -Ux fish_user_paths /home/untemi/.local/bin/ fish_user_paths

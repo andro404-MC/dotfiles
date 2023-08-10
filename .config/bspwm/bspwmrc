@@ -41,9 +41,12 @@ bspc rule -a firefox desktop='^1'
 #### Auto start #######
 setxkbmap fr &
 dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY &
+dwall -s tokyo
 picom --config ~/.config/picom/picom.conf &
 /usr/bin/polkit-dumb-agent &
 ~/.config/polybar/launch.sh &
 xfce4-power-manager &
 #clipit &
 dunst &
+discord --ignore-gpu-blocklist --enable-features=VaapiVideoDecoder --enable-gpu-rasterization --enable-zero-copy
+mailspring
