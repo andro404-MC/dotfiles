@@ -43,7 +43,6 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias pkgrec="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias pkgli="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
 alias pkgsize="expac -H M '%m\t%n' | sort -h | nl"
-alias neofetch="fastfetch"
 alias myip="curl ip.me"
 
 # DEFAULT APPS

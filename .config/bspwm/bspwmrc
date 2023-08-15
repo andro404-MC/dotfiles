@@ -48,5 +48,5 @@ picom --config ~/.config/picom/picom.conf &
 xfce4-power-manager &
 #clipit &
 dunst &
-discord --ignore-gpu-blocklist --enable-features=VaapiVideoDecoder --enable-gpu-rasterization --enable-zero-copy
-mailspring
+discord --ignore-gpu-blocklist --enable-features=VaapiVideoDecoder --enable-gpu-rasterization --enable-zero-copy &
+mailspring &

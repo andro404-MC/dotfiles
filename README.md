@@ -48,5 +48,3 @@ Here are some related projects
 - [Rofi Applets (by adi1090x)](https://github.com/adi1090x/rofi)
 - [DuckduckGo theme (by Grafikart)](https://duckduckgo.com/?kae=d&ks=m&kak=-1&kax=-1&kaq=-1&kap=-1&kao=-1&kau=-1&k5=1&k7=1a1b26&kj=16161e&kx=1abc9c&k21=16161E&k18=-1&ka=e&kaa=BB9AF7&k9=C0CAF5&k8=6183BB&kt=e)
 - [Firefox theme (by kevin-nel)](https://addons.mozilla.org/en-US/firefox/addon/tokyonight_vim/)
-
-
