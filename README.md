@@ -27,11 +27,11 @@ my bspwm TokyoNight theme (on arch btw)
 - [polkit-dumb-agent-git](https://aur.archlinux.org/packages/polkit-dumb-agent-git)
 - [cava](https://aur.archlinux.org/packages/cava)
 - [expac](https://archlinux.org/packages/extra/x86_64/expac/)
-- [fastfetch](https://aur.archlinux.org/packages/fastfetch)
+- [cfonts](https://aur.archlinux.org/packages/cfonts)
 
 You can install them using YAY:
 ```bash
-  yay -S bspwm sxhkd picom polybar-git lightdm lightdm-gtk-greeter alacritty pcmanfm fish starship gtk-engine-murrine rofi rofi-calc betterlockscreen brightnessctl lxappearance-gtk3 xclip maim xfce4-power-manager polkit-dumb-agent-git cava expac exa lsd
+  yay -S bspwm sxhkd picom polybar-git lightdm lightdm-gtk-greeter alacritty pcmanfm fish starship gtk-engine-murrine rofi rofi-calc betterlockscreen brightnessctl lxappearance-gtk3 xclip maim xfce4-power-manager polkit-dumb-agent-git cava expac exa lsd cfonts
 ```
 
 ## Installation

@@ -8,7 +8,7 @@
 #
 
 function fish_greeting
-  echo -e "$(cat ~/.config/fish/greeting.txt)"
+  cfonts "BPSWM" -a center -f block -g "#f7768e","#7aa2f7" --transition-gradient
 end
 function keyb
   xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
