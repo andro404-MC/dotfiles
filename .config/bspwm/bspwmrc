@@ -7,7 +7,6 @@
 #  ██      ██       ██ ██        ██ ██ ██ ██ ██ ██
 #  ██      ██       ██ ██        ██    ██    ██ ██
 #  ██████████ ████████ ██        ██████████████ ██
-#
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
@@ -31,6 +30,8 @@ bspc rule -a Lxappearance state=floating
 bspc rule -a qimgv state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Pcmanfm state=floating
+bspc rule -a Audacious state=floating
+bspc rule -a qBittorrent state=floating
 bspc rule -a firefox desktop='^1'
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on

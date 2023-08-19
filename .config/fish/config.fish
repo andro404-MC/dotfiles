@@ -38,7 +38,6 @@ alias intel_gpu_top="sudo intel_gpu_top"
 alias pm="sudo pacman"
 alias pmu="sudo pacman -Syu"
 alias c="clear"
-alias clear="clear && fish_greeting"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias pkgrec="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias pkgli="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"

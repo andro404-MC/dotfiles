@@ -97,7 +97,7 @@ case ${chosen} in
         ;;
     $lock)
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l dimblur --quiet
+			betterlockscreen -l dimblur --quiet --off 20
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
 		fi
