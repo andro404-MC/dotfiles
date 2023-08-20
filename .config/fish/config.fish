@@ -8,7 +8,8 @@
 #
 
 function fish_greeting
-  cfonts " BPSWM" -a left -f block -g "#f7768e","#7aa2f7" --transition-gradient
+  echo ""
+  cfonts " BPSWM" -a left -f block -g "#f7768e","#7aa2f7" --transition-gradient -s
 end
 function keyb
   xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
