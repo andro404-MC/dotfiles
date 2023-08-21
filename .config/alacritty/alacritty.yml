@@ -6,10 +6,6 @@ window:
     columns: 108
     lines: 26
 
-  padding:
-    x: 4
-    y: 2
-
   opacity: 0.85
 draw_bold_text_with_bright_colors: true
 

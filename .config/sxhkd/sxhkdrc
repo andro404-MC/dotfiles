@@ -26,7 +26,7 @@ super + @space
 super + r
 	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono'
 super + z
-  rofi -show calc
+  rofi -show calc -modi calc -no-show-match -no-sort
 #  pcmanfm  #
 super + e
 	$EXPLORER

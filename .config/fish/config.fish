@@ -9,7 +9,7 @@
 
 function fish_greeting
   echo ""
-  cfonts " BPSWM" -a left -f block -g "#f7768e","#7aa2f7" --transition-gradient -s
+  cfonts "BPSWM" -a left -f block -g "#f7768e","#7aa2f7" --transition-gradient -s
 end
 function keyb
   xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
@@ -55,4 +55,4 @@ set -Ux VIDEO mpv
 set -Ux IMAGE sxiv
 
 set -Ux LIBVA_DRI3_DISABLE 1
-set -Ux fish_user_paths /home/untemi/.local/bin/ fish_user_paths
+set -Ux fish_user_paths ~/.local/bin/ ~/go/bin fish_user_paths
