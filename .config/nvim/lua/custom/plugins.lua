@@ -9,7 +9,6 @@ local plugins = {
 			},
 		},
 	},
-
 	{
 		"neovim/nvim-lspconfig",
 
@@ -23,6 +22,17 @@ local plugins = {
 		config = function()
 			require("plugins.configs.lspconfig")
 			require("custom.configs.lspconfig")
+		end,
+	},
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreview", "MarkdownPreviewStop" },
+		lazy = false,
+		build = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+		init = function()
+			vim.g.mkdp_theme = "dark"
 		end,
 	},
 }
