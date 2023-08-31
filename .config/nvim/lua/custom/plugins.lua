@@ -2,11 +2,7 @@ local plugins = {
 	{
 		"williamboman/mason.nvim",
 		opts = {
-			ensure_installed = {
-				"gopls",
-				"lua-language-server",
-				"stylua",
-			},
+			ensure_installed = {},
 		},
 	},
 	{
@@ -33,7 +29,19 @@ local plugins = {
 		end,
 		init = function()
 			vim.g.mkdp_theme = "dark"
+			vim.g.mkdp_browser = "/usr/local/bin/surf"
 		end,
+	},
+	{
+		"nvim-tree/nvim-tree.lua",
+		opts = {
+			view = {
+				width = 23,
+			},
+			filters = {
+				dotfiles = false,
+			},
+		},
 	},
 }
 return plugins

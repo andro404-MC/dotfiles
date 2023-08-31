@@ -1,3 +1,4 @@
+#!/bin/sh
 #  #########   #####   #####
 # #########    ####     ####
 # ####   #      ####   ####   hotkey
@@ -18,7 +19,7 @@
 ###### apps start shortcut ######
 # alacritty #
 super + a
-  $TERMINAL	
+  alacritty	
 # rofi drun #
 super + @space
 	~/.config/rofi/scripts/launcher_t1
@@ -29,12 +30,14 @@ super + z
   rofi -show calc -modi calc -no-show-match -no-sort
 #  pcmanfm  #
 super + e
-	$EXPLORER
+	pcmanfm
 #  browser  #
 super + b
-  $BROWSER
+  firefox
 super + d
   discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
+super + g 
+  sxiv -t ~/Pictures/*
 ######### functionality #########
 ## sxhkd reload ##
 super + Escape
@@ -85,7 +88,7 @@ super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
-super + g
+super + shift + g
 	bspc node -s biggest.window
 
 #

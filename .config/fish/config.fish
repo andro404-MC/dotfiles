@@ -54,6 +54,3 @@ set -Ux TERMINAL alacritty
 set -Ux READER zathura
 set -Ux VIDEO mpv
 set -Ux IMAGE sxiv
-
-set -Ux LIBVA_DRI3_DISABLE 1
-set -Ux fish_user_paths ~/.local/bin/ ~/go/bin fish_user_paths
