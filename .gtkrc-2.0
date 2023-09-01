@@ -3,7 +3,7 @@
 
 include "/home/untemi/.gtkrc-2.0.mine"
 gtk-theme-name="TokyoNight"
-gtk-icon-theme-name="Tela-circle-blue-dark"
+gtk-icon-theme-name="Reversal-blue-dark"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Simp1e-Tokyo-Night"
 gtk-cursor-theme-size=0
