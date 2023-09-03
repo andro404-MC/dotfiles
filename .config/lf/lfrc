@@ -1,10 +1,8 @@
-set shell sh
-
-set previewer ~/.config/lf/preview
-set cleaner ~/.config/lf/cleaner
+set icons
+set cleaner '~/.config/lf/cleaner'
+set previewer '~/.config/lf/scope'
 set preview true
 set drawbox true
-set icons true
 set ignorecase true
 
 map . set hidden!

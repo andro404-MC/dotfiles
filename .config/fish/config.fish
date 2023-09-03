@@ -44,7 +44,7 @@ alias pkgrec="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias pkgli="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
 alias pkgsize="expac -H M '%m\t%n' | sort -h | nl"
 alias myip="curl ip.me"
-alias lf="~/.config/lf/lfub"
+alias lf=lfub
 
 # DEFAULT APPS
 set -Ux BROWSER firefox
