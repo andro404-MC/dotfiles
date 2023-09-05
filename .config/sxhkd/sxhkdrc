@@ -1,24 +1,12 @@
-#  #########   #####   #####
-# #########    ####     ####
-# ####   #      ####   ####   hotkey
-# ####           #### ####
-# ########        #######
-#  ########        #####
-#      #####      #######     daemon
-# #    #####     #### ####
-# #########     ####   ####
-#  #######    #####     #####
-#
-
 
 #############################
 #### independent hotkeys ####
 #############################
 
 ###### apps start shortcut ######
-# alacritty #
+# TERMINAL  #
 super + a
-  alacritty	
+  $TERMINAL	
 # rofi drun #
 super + @space
 	~/.config/rofi/scripts/launcher_t1
@@ -27,18 +15,18 @@ super + r
 	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono'
 super + z
   rofi -show calc -modi calc -no-show-match -no-sort
-#  pcmanfm  #
+# explorer  #
 super + e
-	pcmanfm
+	$EXPLORER
 #  browser  #
 super + b
-  firefox
+  $BROWSER
 super + d
   discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
 super + g 
   sxiv -t ~/Pictures/*
 super + n
-  ~/go/bin/pigo
+  ~/go/bin/pingo
 ######### functionality #########
 ## sxhkd reload ##
 super + Escape

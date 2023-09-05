@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 
 #  █████████  ████████ █████████ ██ ██████████████
 #  ██     ██  ██       ██     ██ ██ ██    ██    ██
@@ -8,8 +8,14 @@
 #  ██      ██       ██ ██        ██    ██    ██ ██
 #  ██████████ ████████ ██        ██████████████ ██
 
+#sxhkd
+export $(envsubst < .env)
+setxkbmap fr &&
 pgrep -x sxhkd >/dev/null || sxhkd &
+numlockx on &
+wmname LG3D
 
+######## bspwm ########
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config border_width 2
@@ -38,8 +44,8 @@ bspc rule -a firefox desktop='^1'
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 
-#### Auto start #######
-setxkbmap fr &
+####### Auto start #######
+xsetroot -cursor_name left_ptr &
 dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY &
 dwall -s tokyo
 picom --config ~/.config/picom/picom.conf &
