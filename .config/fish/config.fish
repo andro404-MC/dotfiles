@@ -25,6 +25,9 @@ function restore
   sh ~/.config/polybar/launch.sh
   picom --config ~/.config/picom/picom.conf -b
 end
+function romfd
+  fd $argv ~/Downloads/Torrent/DataBase/
+end
 if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
@@ -33,7 +36,7 @@ end
 # ALIAS
 alias ls="lsd -a --group-directories-first"
 alias ll="lsd -al --color=always --group-directories-first"
-alias tree="exa --color=always --icons --tree"
+alias tree="eza --color=always --icons --tree"
 alias grep="rg"
 alias intel_gpu_top="sudo intel_gpu_top"
 alias pm="sudo pacman"
