@@ -12,7 +12,7 @@ super + @space
 	~/.config/rofi/scripts/launcher_t1
 #   dmenu   #
 super + r
-	dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono'
+	dmenu_path | dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono'
 super + z
   rofi -show calc -modi calc -no-show-match -no-sort
 # explorer  #
@@ -48,7 +48,21 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	amixer set Master {mute , unmute}
 
-# applets  keys #
+# mouse control
+super + alt + Up
+  xdotool mousemove_relative 0 -20
+super + alt + Down
+  xdotool mousemove_relative 0 20
+super + alt + Right
+  xdotool mousemove_relative 20 0
+super + alt + Left
+  xdotool mousemove_relative -- -20 0
+super + alt + KP_Insert
+  xdotool click 1
+super + alt + KP_Delete
+  xdotool click 3
+
+# applets keys #
 Print
   ~/.config/rofi/applets/bin/screenshot.sh
 
