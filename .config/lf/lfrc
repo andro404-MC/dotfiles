@@ -6,3 +6,11 @@ set drawbox true
 set ignorecase true
 
 map . set hidden!
+map d ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "delete?[y/N]"
+	read ans
+	[ $ans = "y" ] && trash $fx
+}}
