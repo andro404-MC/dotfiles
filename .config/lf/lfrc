@@ -6,11 +6,25 @@ set drawbox true
 set ignorecase true
 
 map . set hidden!
-map d ${{
-	clear; tput cup $(($(tput lines)/3)); tput bold
+map d trash
+
+cmd trash ${{
+  files=$(printf "$fx" | tr '\n' ';')
+  clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
 	printf "%s\n\t" "$fx"
 	printf "delete?[y/N]"
 	read ans
-	[ $ans = "y" ] && trash $fx
+
+  while [ "$files" ]; do
+    if [ $ans = "y" ]; then
+      file=${files%%;*}
+      trash-put "$(basename "$file")"
+      if [ "$files" = "$file" ]; then
+        files=''
+      else
+        files="${files#*;}"
+      fi
+    fi
+  done
 }}

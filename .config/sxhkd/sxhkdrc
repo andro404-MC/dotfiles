@@ -24,7 +24,7 @@ super + b
 super + d
   discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
 super + g 
-  sxiv -t ~/Pictures/*
+  nsxiv -t ~/Pictures/*
 super + n
   ~/go/bin/pingo
 ######### functionality #########
