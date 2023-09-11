@@ -30,10 +30,11 @@ my bspwm TokyoNight theme (on arch btw)
 - [ueberzugpp](https://aur.archlinux.org/packages/ueberzugpp)
 - [lf](https://archlinux.org/packages/extra/x86_64/lf/)
 - [trash-cli](https://archlinux.org/packages/extra/x86_64/trash-cli/)
+- [fzf](https://archlinux.org/packages/extra/x86_64/fzf/))
 
 You can install them using YAY:
 ```bash
-  yay -S bspwm sxhkd picom polybar-git ly alacritty pcmanfm fish starship gtk-engine-murrine rofi rofi-calc betterlockscreen brightnessctl lxappearance-gtk3 xclip maim xfce4-power-manager polkit-dumb-agent-git cava expac exa lsd cfonts ueberzugpp lf trash-cli
+  yay -S bspwm sxhkd picom polybar-git ly alacritty pcmanfm fish starship gtk-engine-murrine rofi rofi-calc betterlockscreen brightnessctl lxappearance-gtk3 xclip maim xfce4-power-manager polkit-dumb-agent-git cava expac exa lsd cfonts ueberzugpp lf trash-cli fzf
 ```
 
 ## Installation

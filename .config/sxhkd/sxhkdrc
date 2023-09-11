@@ -4,42 +4,39 @@
 #############################
 
 ###### apps start shortcut ######
-# TERMINAL  #
+# Terminal  #
 super + a
   $TERMINAL	
-# rofi drun #
-super + @space
-	~/.config/rofi/scripts/launcher_t1
-#   dmenu   #
+#   Dmenu   #
 super + r
 	dmenu_path | dmenu_run -h 26 -nb \#1a1b26 -nf \#C5C8C6 -sb \#7aa2f7 -sf \#E5E9F0 -fn 'FantasqueSansM Nerd Font Mono'
-super + z
-  rofi -show calc -modi calc -no-show-match -no-sort
-# explorer  #
+# Explorer  #
 super + e
 	$EXPLORER
-#  browser  #
+#  Browser  #
 super + b
   $BROWSER
+#  Discord  #
 super + d
   discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
+#  gallery  #
 super + g 
   nsxiv -t ~/Pictures/*
+#    pingo  #
 super + n
   ~/go/bin/pingo
+
 ######### functionality #########
-## sxhkd reload ##
+#  sxhkd reload  #
 super + Escape
 	pkill -USR1 -x sxhkd
-## lock screen  ##
-super + l
-  ~/.config/rofi/powermenu/type-2/powermenu.sh
-#	betterlockscreen -l blur 0.8
+
+#  media control #
 XF86AudioPlay
   playerctl play-pause
-
 shift + XF86AudioPlay
   playerctl pause -a
+
 # volume control #
 XF86AudioLowerVolume
 	amixer set Master 5%-
@@ -48,7 +45,7 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	amixer set Master {mute , unmute}
 
-# mouse control
+# mouse control #
 super + alt + Up
   xdotool mousemove_relative 0 -20
 super + alt + Down
@@ -62,11 +59,17 @@ super + alt + KP_Insert
 super + alt + KP_Delete
   xdotool click 3
 
-# applets keys #
+#  Rofi applets #
 Print
   ~/.config/rofi/applets/bin/screenshot.sh
+super + z
+  rofi -show calc -modi calc -no-show-match -no-sort
+super + l
+  ~/.config/rofi/powermenu/type-2/powermenu.sh
+super + @space
+	~/.config/rofi/scripts/launcher_t1
 
-#keyboard layout#
+# switch layout #
 super + shift + l
   ~/scripts/layoutswitch.sh
 

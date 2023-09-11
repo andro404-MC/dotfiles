@@ -47,3 +47,4 @@ alias pkgli="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | nl"
 alias pkgsize="expac -H M '%m\t%n' | sort -h | nl"
 alias myip="curl ip.me"
 alias lf=lfub
+alias docs=~/scripts/docs.sh
