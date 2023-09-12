@@ -5,8 +5,12 @@ set preview true
 set drawbox true
 set ignorecase true
 
+map n
+
 map . set hidden!
 map d trash
+map nf newfolder
+map c cut
 
 cmd trash ${{
   files=$(printf "$fx" | tr '\n' ';')
@@ -27,4 +31,12 @@ cmd trash ${{
       fi
     fi
   done
+}}
+cmd newfolder ${{
+  clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "folder name : "
+	read ans
+
+  mkdir "$PWD/$ans"
 }}
