@@ -32,6 +32,8 @@ if status is-interactive
     starship init fish | source
 end
 
+export $(cat ~/.env | xargs)
+
 # ALIAS
 alias ls="lsd -a --group-directories-first"
 alias ll="lsd -al --color=always --group-directories-first"

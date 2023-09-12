@@ -71,7 +71,8 @@ super + @space
 
 # switch layout #
 super + shift + l
-  ~/scripts/layoutswitch.sh
+  setxkbmap -layout fr
+
 
 #############################
 ####### bspwm hotkeys #######
