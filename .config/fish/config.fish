@@ -22,8 +22,10 @@ function boost
   killall polybar picom
 end
 function restore
-  sh ~/.config/polybar/launch.sh
-  picom --config ~/.config/picom/picom.conf -b
+  sh ~/.config/polybar/launch.sh &
+  picom --config ~/.config/picom/picom.conf -b &
+  xrandr -s 1366x768 &
+  dwall -s tokyo &
 end
 function romfd
   fd $argv ~/Downloads/Torrent/DataBase/

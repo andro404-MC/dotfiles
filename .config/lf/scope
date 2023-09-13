@@ -22,6 +22,14 @@ ifub() {
 # be regenerated once seen.
 
 case "$(file --dereference --brief --mime-type -- "$1")" in
+  application/gzip) tar tzf "$1" ;;
+  application/x-bzip2) tar tjf "$1" ;;
+  application/x-xz | *.txz) xz --list "$1" ;;
+  application/x-tar) tar tf "$1" ;;
+  application/zip | application/java-archive) unzip -l "$1" ;;
+  application/x-rar) unrar l "$1" ;;
+  application/x-7z-compressed) 7z l "$1" ;;
+  application/x-iso9660-image) iso-info --no-header -l "$1" ;;
 	image/avif) CACHE="${XDG_CACHE_HOME:-$HOME/.cache}/lf/thumb.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha256sum | cut -d' ' -f1)"
 		[ ! -f "$CACHE" ] && convert "$1" "$CACHE.jpg"
 		image "$CACHE.jpg" "$2" "$3" "$4" "$5" "$1" ;;
@@ -29,6 +37,7 @@ case "$(file --dereference --brief --mime-type -- "$1")" in
 		CACHE="${XDG_CACHE_HOME:-$HOME/.cache}/lf/thumb.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha256sum | cut -d' ' -f1)"
 		[ ! -f "$CACHE" ] && djvused "$1" -e 'select 1; save-page-with /dev/stdout' | convert -density 200 - "$CACHE.jpg" > /dev/null 2>&1
 		image "$CACHE.jpg" "$2" "$3" "$4" "$5" "$1" ;;
+
 	image/*) image "$1" "$2" "$3" "$4" "$5" "$1" ;;
 	text/troff) man ./ "$1" | col -b ;;
 	text/* | */xml | application/json | application/x-ndjson) highlight -O ansi "$1" || cat "$1" ;;
@@ -48,8 +57,5 @@ case "$(file --dereference --brief --mime-type -- "$1")" in
 		[ ! -f "$CACHE.jpg" ] && gnome-epub-thumbnailer "$1" "$CACHE.jpg"
 		image "$CACHE.jpg" "$2" "$3" "$4" "$5" "$1"
 		;;
-	application/*zip) atool --list -- "$1" ;;
-	*opendocument*) odt2txt "$1" ;;
-	application/pgp-encrypted) gpg -d -- "$1" ;;
 esac
 exit 1
