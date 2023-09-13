@@ -22,10 +22,11 @@ super + d
 #  gallery  #
 super + g 
   nsxiv -t ~/Pictures/*
-#    pingo  #
+#   pingo   #
 super + n
   ~/go/bin/pingo
-
+super + p
+  pscircle --output=/tmp/pscircle-tree.png && nsxiv /tmp/pscircle-tree.png
 ######### functionality #########
 #  sxhkd reload  #
 super + Escape

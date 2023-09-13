@@ -11,6 +11,7 @@ map . set hidden!
 map d trash
 map nf newfolder
 map c cut
+map x &{{nsxiv "$PWD" -r}}
 
 cmd trash ${{
   files=$(printf "$fx" | tr '\n' ';')
