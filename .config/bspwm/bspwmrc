@@ -37,6 +37,7 @@ bspc rule -a Pavucontrol state=floating
 bspc rule -a Pcmanfm state=floating
 bspc rule -a Audacious state=floating
 bspc rule -a qBittorrent state=floating
+bspc rule -a Godot_ProjectList state=floating
 bspc rule -a firefox desktop='^1'
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on

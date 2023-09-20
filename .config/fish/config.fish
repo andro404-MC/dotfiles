@@ -19,16 +19,15 @@ function clean
   pm -Rns $(pacman -Qtdq)
 end
 function boost
-  killall polybar picom
+  killall picom
 end
 function restore
-  sh ~/.config/polybar/launch.sh &
   picom --config ~/.config/picom/picom.conf -b &
   xrandr -s 1366x768 &
   dwall -s tokyo &
 end
 function romfd
-  fd $argv ~/Downloads/Torrent/DataBase/
+  find ~/Downloads/Torrent/DataBase/ -type f | fzf | awk '{print $1}' | xargs -r qbittorrent
 end
 if status is-interactive
     starship init fish | source

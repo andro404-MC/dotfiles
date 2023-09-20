@@ -13,6 +13,8 @@ super + r
 # Explorer  #
 super + e
 	$EXPLORER
+super + shift + e
+	alacritty -e lfub
 #  Browser  #
 super + b
   $BROWSER
@@ -74,7 +76,9 @@ super + @space
 super + shift + l
   setxkbmap -layout fr
 
-
+# a fix for godot #
+super + KP_Insert
+  bspc node any.hidden -g hidden=off
 #############################
 ####### bspwm hotkeys #######
 #############################
