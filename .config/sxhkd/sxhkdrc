@@ -5,7 +5,7 @@
 
 ###### apps start shortcut ######
 # Terminal  #
-super + a
+super + q
   $TERMINAL	
 #   Dmenu   #
 super + r
@@ -48,20 +48,6 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	amixer set Master {mute , unmute}
 
-# mouse control #
-super + alt + Up
-  xdotool mousemove_relative 0 -20
-super + alt + Down
-  xdotool mousemove_relative 0 20
-super + alt + Right
-  xdotool mousemove_relative 20 0
-super + alt + Left
-  xdotool mousemove_relative -- -20 0
-super + alt + KP_Insert
-  xdotool click 1
-super + alt + KP_Delete
-  xdotool click 3
-
 #  Rofi applets #
 Print
   ~/.config/rofi/applets/bin/screenshot.sh
@@ -71,10 +57,6 @@ super + l
   ~/.config/rofi/powermenu/type-2/powermenu.sh
 super + @space
 	~/.config/rofi/scripts/launcher_t1
-
-# switch layout #
-super + shift + l
-  setxkbmap -layout fr
 
 # a fix for godot #
 super + KP_Insert
@@ -146,7 +128,7 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
+super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
 #	bspc desktop --focus ^{1-9,10}

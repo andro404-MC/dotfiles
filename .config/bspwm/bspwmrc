@@ -10,7 +10,7 @@
 
 #sxhkd
 export $(envsubst < .env)
-setxkbmap fr &&
+setxkbmap at &&
 pgrep -x sxhkd >/dev/null || sxhkd &
 numlockx on &
 wmname LG3D
