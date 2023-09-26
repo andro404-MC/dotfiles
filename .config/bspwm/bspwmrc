@@ -10,9 +10,8 @@
 
 #sxhkd
 export $(envsubst < .env)
-setxkbmap at &&
+setxkbmap -layout "de" &&
 pgrep -x sxhkd >/dev/null || sxhkd &
-numlockx on &
 wmname LG3D
 
 ######## bspwm ########
@@ -48,11 +47,9 @@ bspc rule -a firefox desktop='^1'
 ####### Auto start #######
 xsetroot -cursor_name left_ptr &
 dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY &
-dwall -s tokyo
+dwall -s tokyo &
 picom --config ~/.config/picom/picom.conf &
 /usr/bin/polkit-dumb-agent &
 ~/.config/polybar/launch.sh &
 xfce4-power-manager &
-#clipit &
-dunst &
-mailspring --ignore-gpu-blocklist --enable-features=VaapiVideoDecoder --enable-gpu-rasterization --enable-zero-copy &
+mailspring &
