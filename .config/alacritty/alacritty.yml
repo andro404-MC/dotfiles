@@ -26,7 +26,7 @@ font:
     family: JetBrainsMono Nerd Font
     style: Bold Italic
 
-  size: 9
+  size: 10
 
 shell:
   program: /bin/fish

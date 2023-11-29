@@ -10,7 +10,7 @@
 
 #sxhkd
 export $(envsubst < .env)
-setxkbmap -layout "de" &&
+setxkbmap -layout "us" &&
 pgrep -x sxhkd >/dev/null || sxhkd &
 wmname LG3D
 
@@ -49,7 +49,7 @@ xsetroot -cursor_name left_ptr &
 dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY &
 dwall -s tokyo &
 picom --config ~/.config/picom/picom.conf &
-/usr/bin/polkit-dumb-agent &
+/usr/bin/lxpolkit &
 ~/.config/polybar/launch.sh &
 xfce4-power-manager &
 mailspring &

@@ -26,9 +26,6 @@ function restore
   xrandr -s 1366x768 &
   dwall -s tokyo &
 end
-function romfd
-  find ~/Downloads/Torrent/DataBase/ -type f | fzf | awk '{print $1}' | xargs -r qbittorrent
-end
 if status is-interactive
     starship init fish | source
 end
