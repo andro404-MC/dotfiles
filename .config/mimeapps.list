@@ -18,6 +18,8 @@ application/x-extension-xht=firefox.desktop;
 font/ttf=nvim.desktop;
 text/plain=nvim.desktop;
 application/vnd.comicbook+zip=org.pwmt.zathura-cb.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-W2E2E2.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-W2E2E2.desktop;
 
 [Default Applications]
 x-scheme-handler/mailspring=Mailspring.desktop
@@ -126,3 +128,6 @@ application/x-compress=xarchiver.desktop
 application/x-cpio=xarchiver.desktop
 application/x-xz=xarchiver.desktop
 application/zstd=xarchiver.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-W2E2E2.desktop
+message/rfc822=userapp-Thunderbird-W2E2E2.desktop
+x-scheme-handler/mid=userapp-Thunderbird-W2E2E2.desktop

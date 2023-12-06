@@ -38,6 +38,7 @@ bspc rule -a Audacious state=floating
 bspc rule -a qBittorrent state=floating
 bspc rule -a Godot_ProjectList state=floating
 bspc rule -a firefox desktop='^1'
+bspc rule -a thunderbird desktop='^10'
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
@@ -52,4 +53,4 @@ picom --config ~/.config/picom/picom.conf &
 /usr/bin/lxpolkit &
 ~/.config/polybar/launch.sh &
 xfce4-power-manager &
-mailspring &
+/usr/bin/discord --start-minimized &

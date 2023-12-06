@@ -71,7 +71,8 @@ super + l
   ~/.config/rofi/powermenu/type-2/powermenu.sh
 super + @space
 	~/.config/rofi/scripts/launcher_t1
-
+super + semicolon
+  rofi -modi "emoji:rofimoji" -show emoji
 # a fix for godot #
 super + KP_Insert
   bspc node any.hidden -g hidden=off
