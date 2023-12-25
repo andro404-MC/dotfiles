@@ -74,7 +74,7 @@ super + @space
 super + semicolon
   rofimoji
 # a fix for godot #
-super + KP_Insert
+super + Insert
   bspc node any.hidden -g hidden=off
 #############################
 ####### bspwm hotkeys #######

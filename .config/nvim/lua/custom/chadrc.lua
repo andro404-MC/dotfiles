@@ -33,4 +33,10 @@ M.ui = {
 }
 M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
+
+vim.filetype.add {
+  extension = {
+    templ = "templ",
+  },
+}
 return M

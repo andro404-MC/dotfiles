@@ -2,7 +2,7 @@ local plugins = {
   {
     "williamboman/mason.nvim",
     opts = {
-      ensure_installed = { "beautysh" },
+      ensure_installed = {},
     },
   },
   {
