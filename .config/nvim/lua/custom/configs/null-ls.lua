@@ -8,7 +8,6 @@ local sources = {
   formatting.goimports_reviser,
   formatting.golines,
   formatting.stylua,
-  formatting.templ,
 }
 
 null_ls.setup {

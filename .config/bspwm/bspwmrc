@@ -34,9 +34,9 @@ bspc rule -a Xarchiver state=floating
 bspc rule -a Lxappearance state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Pcmanfm state=floating
+bspc rule -a Nemo state=floating
 bspc rule -a Audacious state=floating
 bspc rule -a qBittorrent state=floating
-bspc rule -a Godot_ProjectList state=floating
 bspc rule -a firefox desktop='^1'
 bspc rule -a floorp desktop='^1'
 bspc rule -a thunderbird desktop='^10'
@@ -49,10 +49,11 @@ bspc rule -a thunderbird desktop='^10'
 ####### Auto start #######
 xsetroot -cursor_name left_ptr &
 dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY &
-dwall -s tokyo &
-picom --config ~/.config/picom/picom.conf &
+/usr/bin/dwall -s tokyo &
+/usr/bin/picom --config ~/.config/picom/picom.conf &
 /usr/bin/lxpolkit &
 ~/.config/polybar/launch.sh &
-xfce4-power-manager &
-/usr/bin/discord --start-minimized &
+/usr/bin/xfce4-power-manager &
+/usr/bin/discord --start-minimized --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy &
 /usr/bin/thunderbird &
+/usr/bin/keepassxc &

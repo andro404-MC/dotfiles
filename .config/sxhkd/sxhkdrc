@@ -27,8 +27,9 @@ super + g
 #   pingo   #
 super + n
   ~/go/bin/pingo
-super + p
-  pscircle --output=/tmp/pscircle-tree.png && nsxiv /tmp/pscircle-tree.png
+#Task Manager
+shift + control + Escape
+  /usr/bin/missioncenter
 ######### functionality #########
 #  sxhkd reload  #
 super + Escape
