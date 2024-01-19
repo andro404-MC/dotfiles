@@ -231,3 +231,4 @@ application/x-lzop=xarchiver.desktop
 application/x-lz4=xarchiver.desktop
 application/x-tzo=xarchiver.desktop
 application/x-lzip=xarchiver.desktop
+text/html=floorp.desktop

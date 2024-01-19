@@ -34,7 +34,7 @@ bspc rule -a Xarchiver state=floating
 bspc rule -a Lxappearance state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Pcmanfm state=floating
-bspc rule -a Nemo state=floating
+bspc rule -a Nemo state=floating rectangle=990x530+188+119
 bspc rule -a Audacious state=floating
 bspc rule -a qBittorrent state=floating
 bspc rule -a firefox desktop='^1'
