@@ -49,20 +49,6 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	amixer set Master {mute , unmute}
 
-# mouse control #
-super + alt + Up
-  xdotool mousemove_relative 0 -20
-super + alt + Down
-  xdotool mousemove_relative 0 20
-super + alt + Right
-  xdotool mousemove_relative 20 0
-super + alt + Left
-  xdotool mousemove_relative -- -20 0
-super + alt + KP_Insert
-  xdotool click 1
-super + alt + KP_Delete
-  xdotool click 3
-
 #  Rofi applets #
 Print
   ~/.config/rofi/applets/bin/screenshot.sh
@@ -74,9 +60,13 @@ super + @space
 	~/.config/rofi/scripts/launcher_t1
 super + semicolon
   rofimoji
-# a fix for godot #
-super + Insert
-  bspc node any.hidden -g hidden=off
+
+# Quick FPS boost #
+super + KP_Add
+  fish -c boost
+super + KP_Subtract
+  fish -c restore
+
 #############################
 ####### bspwm hotkeys #######
 #############################
