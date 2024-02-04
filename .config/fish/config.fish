@@ -11,23 +11,37 @@ function fish_greeting
   echo ""
   cfonts "#!" -a left -f block -g "#f7768e","#7aa2f7" --transition-gradient -s
 end
+
 function keyb
   xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
 end
+
 function clean
   yay -Sc
   pm -Rns $(pacman -Qtdq)
 end
+
 function boost
   killall picom
 end
+
 function restore
   picom --config ~/.config/picom/picom.conf -b &
   xrandr -s 1366x768 &
   dwall -s tokyo &
 end
+
 if status is-interactive
-    starship init fish | source
+  starship init fish | source
+end
+
+function ya
+	set tmp (mktemp -t "yazi-cwd.XXXXX")
+	yazi $argv --cwd-file="$tmp"
+	if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
 end
 
 export $(cat ~/.env | xargs)

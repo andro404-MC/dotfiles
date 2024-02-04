@@ -14,7 +14,7 @@ super + r
 super + e
 	$EXPLORER
 super + shift + e
-	alacritty -e lfub
+	alacritty -e yazi
 #  Browser  #
 super + b
   $BROWSER
